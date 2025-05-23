@@ -302,7 +302,7 @@
                 <p class="mb-4 leading-relaxed text-slate-700">
                     The integration of Artificial Intelligence into the Secure Software Development Life Cycle is not merely a transient trend but a profound, transformative journey, characterized by continuous evolution and increasing sophistication. The future promises a landscape where AI plays an even more central, autonomous, and integrated role in safeguarding software across its entire lifecycle.
                 </p>
-                <p class="mb-4 leading-relaxed text-slate-700">
+                <p class="mb-4 leading-relaxapied text-slate-700">
                     We can anticipate the emergence of more sophisticated and **autonomous AI security agents** capable of not just detecting but also proactively remediating certain classes of vulnerabilities or responding to incidents with minimal human intervention. This could lead to the development of truly "self-healing" applications that can automatically patch vulnerabilities, adapt their defenses in real-time against emerging threats, or even reconfigure themselves to isolate compromised components. **Generative AI**, particularly large language models, will likely become even more adept at creating secure code from high-level specifications, identifying complex logical vulnerabilities that span multiple code modules, and even simulating sophisticated attack scenarios for advanced red-teaming and security testing purposes. Its ability to understand and generate human-like text will also significantly improve automated threat intelligence analysis, allowing for rapid synthesis of global threat data, and streamline incident reporting and post-mortem analysis.
                 </p>
                 <p class="mb-4 leading-relaxed text-slate-700">
@@ -491,8 +491,7 @@
             let chatHistory = [];
             chatHistory.push({ role: "user", parts: [{ text: prompt }] });
             const payload = { contents: chatHistory };
-            const apiKey = ""; // IMPORTANT: You MUST replace this with your actual Gemini API key.
-            // Obtain your API key from Google AI Studio: https://aistudio.google.com/app/apikey
+            const apiKey = "AIzaSyDNlCOmTLBs-53XwjDygsKOqAuMqgctuYU"; 
 
             if (!apiKey) {
                 errorDisplay.innerHTML = '<p>Error: Gemini API Key is missing. Please add your API key to the `apiKey` variable in the script.</p>';
